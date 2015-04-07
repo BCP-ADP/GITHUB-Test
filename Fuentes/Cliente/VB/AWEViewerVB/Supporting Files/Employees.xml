@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employees>
+   <Dept name='Engineering'>
+        <Employee>
+			<ID>3</ID>
+            <Name>Roberto Tamburello</Name>
+            <Image>RT.bmp</Image>
+        </Employee>
+        <Employee>
+			<ID>9</ID>
+            <Name>Gail Erickson</Name>
+            <Image>GE.bmp</Image>
+        </Employee>
+        <Employee>
+			<ID>11</ID>
+            <Name>Jossef Goldberg</Name>
+            <Image>JG.bmp</Image>
+        </Employee>
+        <Employee>
+			<ID>12</ID>
+            <Name>Terri Duffy</Name>
+            <Image>TDU.bmp</Image>
+        </Employee>
+    </Dept>
+    <Dept name='Marketing'>
+        
+	<Employee>
+			<ID>2</ID>
+            <Name>Kevin Brown</Name>
+            <Image>KB.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>6</ID>
+            <Name>David Bradley</Name>
+            <Image>DB.bmp</Image>
+        </Employee>
+    </Dept>
+    <Dept name='Production'>
+	<Employee>
+			<ID>1</ID>
+            <Name>Guy Gilbert</Name>
+            <Image>GG.bmp</Image>
+        </Employee>        
+	<Employee>
+			<ID>7</ID>
+            <Name>JoLynn Dobney</Name>
+            <Image>JD.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>8</ID>
+            <Name>Ruth Ellerbrock</Name>
+            <Image>RE.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>10</ID>
+            <Name>Barry Johnson</Name>
+            <Image>BJ.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>13</ID>
+            <Name>Sidney Higa</Name>
+            <Image>SH.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>14</ID>
+            <Name>Taylor Maxwell</Name>
+            <Image>TM.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>15</ID>
+            <Name>Jeffrey Ford</Name>
+            <Image>JF.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>16</ID>
+            <Name>Jo Brown</Name>
+            <Image>JB.bmp</Image>
+        </Employee>
+        <Employee>
+			<ID>17</ID>
+            <Name>Doris Hartwig</Name>
+            <Image>DH.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>18</ID>
+            <Name>John Campbell</Name>
+            <Image>JC.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>19</ID>
+            <Name>Diane Glimp</Name>
+            <Image>DG.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>20</ID>
+            <Name>Steven Selikoff</Name>
+            <Image>SS.bmp</Image>
+        </Employee>
+    </Dept>
+    <Dept name='Tool Design'>
+        <Employee>
+			<ID>4</ID>
+            <Name>Rob Walters</Name>
+            <Image>RW.bmp</Image>
+        </Employee>
+	<Employee>
+			<ID>5</ID>
+            <Name>Thierry D'Hers</Name>
+            <Image>TD.bmp</Image>
+        </Employee>
+    </Dept>
+</Employees> 

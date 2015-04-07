@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85463DED-B6AE-4D45-ADE9-841F2CD0BC3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AWEViewerVB.My.MyApplication</StartupObject>
+    <RootNamespace>AWEViewerVB</RootNamespace>
+    <AssemblyName>AWEViewerVB</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AWEViewerVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AWEViewerVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomIIdentity.vb" />
+    <Compile Include="DepartmentDetails.Designer.vb">
+      <DependentUpon>DepartmentDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepartmentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeContactsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeContactsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.vb">
+      <DependentUpon>EmployeeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetailsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeNode.vb" />
+    <Compile Include="EmployeeResultsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeResultsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeResultsGrid.Designer.vb">
+      <DependentUpon>EmployeeResultsGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeResultsGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReviews.designer.vb">
+      <DependentUpon>EmployeeReviews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReviews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeViewer.Designer.vb">
+      <DependentUpon>EmployeeViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InheritanceTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalizationTest.designer.vb">
+      <DependentUpon>LocalizationTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizationTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logon.Designer.vb">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My Project\ApplicationEvents.vb" />
+    <Compile Include="ReportGenerator.Designer.vb">
+      <DependentUpon>ReportGenerator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGeneratorHelp.Designer.vb">
+      <DependentUpon>ReportGeneratorHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGeneratorHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewsOptionsDialog.Designer.vb">
+      <DependentUpon>ReviewsOptionsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewsOptionsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SickLeaveReport.Designer.vb">
+      <DependentUpon>SickLeaveReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SickLeaveReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supporting Files\EmployeesSickLeave.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesSickLeave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentDetails.resx">
+      <DependentUpon>DepartmentDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeResultsGrid.resx">
+      <DependentUpon>EmployeeResultsGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReviews.resx">
+      <DependentUpon>EmployeeReviews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeViewer.resx">
+      <DependentUpon>EmployeeViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InheritanceTest.resx">
+      <DependentUpon>InheritanceTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationTest.en.resx">
+      <DependentUpon>LocalizationTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationTest.en-US.resx">
+      <DependentUpon>LocalizationTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationTest.fr.resx">
+      <DependentUpon>LocalizationTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationTest.resx">
+      <DependentUpon>LocalizationTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGenerator.resx">
+      <DependentUpon>ReportGenerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneratorHelp.resx">
+      <DependentUpon>ReportGeneratorHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewsOptionsDialog.resx">
+      <DependentUpon>ReviewsOptionsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SickLeaveReport.resx">
+      <DependentUpon>SickLeaveReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supporting Files\EmployeesSickLeave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeesSickLeave.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supporting Files\Copyright.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RolledBack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Photos\DG.BMP" />
+    <Content Include="Photos\DH.BMP" />
+    <Content Include="Photos\GE.BMP" />
+    <Content Include="Photos\JD.BMP" />
+    <Content Include="Photos\JG.BMP" />
+    <Content Include="Photos\KB.BMP" />
+    <Content Include="Photos\NA.BMP" />
+    <Content Include="Photos\RE.BMP" />
+    <Content Include="Photos\RT.BMP" />
+    <Content Include="Photos\RW.BMP" />
+    <None Include="app.config" />
+    <None Include="DepartmentsDataSet.xsc">
+      <DependentUpon>DepartmentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DepartmentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DepartmentsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DepartmentsDataSet.xss">
+      <DependentUpon>DepartmentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeContactsDataSet.xsc">
+      <DependentUpon>EmployeeContactsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeContactsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeContactsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeContactsDataSet.xss">
+      <DependentUpon>EmployeeContactsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDetailsDataSet.xsc">
+      <DependentUpon>EmployeeDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDetailsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeDetailsDataSet.xss">
+      <DependentUpon>EmployeeDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeResultsDataSet.xsc">
+      <DependentUpon>EmployeeResultsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeResultsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeResultsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeResultsDataSet.xss">
+      <DependentUpon>EmployeeResultsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\GoLtr.bmp" />
+    <None Include="Resources\Help.bmp" />
+    <None Include="Resources\VSProject_report.bmp" />
+    <None Include="Resources\camera.bmp" />
+    <None Include="Resources\Restart.bmp" />
+    <None Include="Resources\Save.bmp" />
+    <None Include="Resources\ChooseColor.bmp" />
+    <None Include="Resources\Font.bmp" />
+    <None Include="Resources\Logo.JPG" />
+    <None Include="Resources\OpenFolder.bmp" />
+    <None Include="Resources\Print.bmp" />
+    <None Include="Resources\PrintPreview.bmp" />
+    <Content Include="Supporting Files\Employees.xml" />
+    <Content Include="Supporting Files\HelpFile.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>
