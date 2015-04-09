@@ -1,0 +1,75 @@
+Ingresar a la Web de GitHub:
+ 
+
+ 
+Crear una rama: (2 pasos)
+
+
+1.	Desde la web, seleccionar el botón “Branch”
+ 
+
+2.	Ingresar el nombre de la nueva rama y presionar Enter
+ 
+ 
+Subir Elementos desde la PC:
+
+ 
+Descargar Elementos a la PC:
+
+
+
+ 
+Buscar elementos: (3 pasos)
+1.	Desde la web posicionarse en el repositorio y rama donde desea buscar:
+ 
+2.	Presionar la tecla “T”
+ 
+3.	Tipear el nombre del documento
+ 
+ 
+Modificar elementos, desde la web: (4 pasos)
+1.	Seleccionar el archivo que desea modificar:
+ 
+
+2.	Presionar el botón de edición:
+ 
+
+3.	Modificar:
+ 
+
+4.	Añadir comentario (opcional)
+ 
+
+5.	Enviar el cambio
+ 
+ 
+Etiquetar Elementos: (3 pasos)
+1.	Seleccionar la opción “Releases”
+ 
+
+2.	Presionar el botón “Draft a new release”
+ 
+
+3.	Ingresar la informacion correspondiente (nombre del tag/reléase) y presionar el botón “Publish Release”
+ 
+ 
+Merge de Elementos: (5 pasos)
+
+1.	Posicionarse en la etiqueta que se desea realizar Merge y presionar el botón indicado en la imagen:
+ 
+
+2.	Presionar el botón “Create pull request”
+
+ 
+
+3.	Agregar un comentario y presionar el botón “create pull request”
+ 
+ 
+4.	Se realiza el merge presionando el botón “Merge pull request”
+ 
+
+5.	Se ingresa un comentario por el merge y se presiona el botón “Confirm Merge”
+ 
+
+6.	Se puede realizar el eliminado de la rama (opcional)
+ 
